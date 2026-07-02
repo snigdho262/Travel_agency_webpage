@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Agency</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -32,14 +33,15 @@
         </main>
         <hr>
         <br><br>
-        <!-- About Us Section -->
 
+        <!-- About Us Section -->
         <section>
             <h2>About Us</h2>
             <p>We are a leading travel agency dedicated to providing exceptional travel experiences. Our team of experienced travel experts is committed to helping you plan your dream vacation, whether it's a relaxing beach getaway, an adventurous mountain trek, or a cultural city tour.</p>
         </section>
         <h4>Popular Destinations</h4>
         <hr>
+
         <!-- Popular Destinations Section -->
         <section>
             <h3>📍Paris, France</h3>
@@ -61,6 +63,7 @@
         <br><br>
         <hr>
         <br><br>
+
         <!-- Our Tour Packages Section -->
         <section>
             <h2>Our Tour Packages</h2>
@@ -82,6 +85,7 @@
                 <button onclick="window.location.href='form.html'">Book Now</button>
                 <hr>
             </article>
+
             <!-- Tokyo Adventure -->
             <article>
                 <img src="tokyo.jpg" width="300" height="200" alt="Tokyo">
@@ -99,6 +103,7 @@
                 <button onclick="window.location.href='form.html'">Book Now</button>
                 <hr>
             </article>
+
             <!-- New York City Experience -->
             <article>
                 <img src="newyork.jpg" width="300" height="200" alt="New York City">
@@ -116,6 +121,7 @@
                 <button onclick="window.location.href='form.html'">Book Now</button>
                 <hr>
             </article>
+
             <!-- Maldives Paradise -->
             <article>
                 <img src="maldives.jpg" width="300" height="200" alt="Maldives">
@@ -134,11 +140,79 @@
             </article>
         </section>
         <hr>
-        <!-- Travel Gallery Section -->
+        <section class="searchtrips">
+            <h2>🔍 Search Your Perfect Trip</h2>
+            <p>Find the best travel package that matches your destination, budget, and schedule.</p>
+            <label for="destination"><strong>Destination:</strong></label>
+            <select id="destination" name="destination">
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="newyork">New York City</option>
+                <option value="maldives">Maldives</option>
+            </select>
+            <br><br>
+            <label for="date"><strong>Departure Date:</strong></label>
+            <input type="date" id="date" name="date">
+            <br><br>
+            <label for="date"><strong>Return Date:</strong></label>
+            <input type="date" id="date" name="date">
+            <br><br>
+            <label for="number" id="number"><strong>Number of Travelers:</strong></label>
+            <input type="number" id="number" name="number" min="1" max="10">
+            <br><br>
+            <button onclick="searchTrips()">Search</button>
+        </section>
+        <hr>
+        <!-- customer reviews  -->
         <section>
+            <h1>⭐Customer Reviews</h1>
+            <h2>Sarah Johnson ⭐⭐⭐⭐⭐</h2>
+            <p>"The Paris tour was absolutely amazing! Everything was well organized, and the hotel exceeded our expectations."</p>
+            
+            <h2>Michael Smith ⭐⭐⭐⭐</h2>
+            <p>"Tokyo was a fantastic experience. The itinerary was well planned, and the local guides were very knowledgeable."</p>
+            <h2>Emily Davis ⭐⭐⭐⭐⭐</h2>
+            <p>"New York City was everything we hoped for and more. The trip was seamless, and we loved every moment of it!"</p>
+            
+        </section>
+        <!-- Special Offers -->
+        <hr>
+        <section>
+            <h2>Maldives Honeymoon Package</h2>
+            <p><strong>Discount:</strong> 30% OFF</p>
+            <p>Book before December 31 and enjoy luxury accommodation, complimentary breakfast, airport pickup, and a sunset cruise.</p>
+            <hr>
+            <h2>Paris Summer Deal</h2>
+            <p><strong>Save:</strong> $300</p>
+            <p>Free Eiffel Tower city tour and breakfast included. Limited-time offer.</p>
+            <hr>
+            <h2>Japan Adventure</h2>
+            <p><strong>Bonous:</strong> Free Travel Insurance</p>
+            <p>Book for two people and receive a complimentary Tokyo city tour.</p>
+            <hr>
+        </section>
+        <!-- why choose us -->
+         <section>
+            <h2>Why Choose Us?</h2>
+            <p>We are committed to providing unforgettable travel experiences with excellent service and affordable prices.</p>
+            <ul>
+                <li>✔ Experienced Travel Consultants</li>
+                <li>✔ Affordable Tour Packages</li>
+                <li>✔ Trusted by Thousands of Travelers</li>
+                <li>✔ 24/7 Customer Support</li>
+                <li>✔ Safe and Secure Booking</li>
+                <li>✔ Professional Tour Guides</li>
+                <li>✔ Comfortable Hotels and Transportation</li>
+                <li>✔ Best Price Guarantee</li>
+                <li>✔ Exclusive Deals and Discounts</li>
+
+            </ul>
+         </section>
+        <!-- Travel Gallery Section -->
+            <section>
+                <hr>
                 <h2>Travel Gallery</h2>
                 <p>Explore our gallery of breathtaking travel destinations.</p>
-                <hr>
                 <div>
                     <img src="paris.jpg" width="200" height="150" alt="Paris">
                     <img src="tokyo.jpg" width="200" height="150" alt="Tokyo">
@@ -146,14 +220,18 @@
                     <img src="maldives.jpg" width="200" height="150" alt="Maldives">
                 </div>
                 <hr>
+
+                <!-- Contact Information -->
+                <h2>Contact Us</h2>
                 <ul>
                     <li>📍 House 12, Road 5, Dhanmondi, Dhaka 1209, Bangladesh</li>
                     <li>📞 +880 1234 567890</li>
                     <li>✉️ info@dreamtravels.com</li>
                     <li>🕒 Saturday – Thursday: 9:00 AM – 8:00 PM</li>
+                    <li>🌐 www.dreamtravels.com</li>
                 </ul>
-                <p>🌐 www.dreamtravels.com</p>
                 <p>Follow us on social media:</p>
+
                 <!-- Social Media Links -->
                 <div>
                     <a href="https://facebook.com/" target="_blank">Facebook</a> |
